@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    color: rgb(75, 72, 72);
+}
+
+.footer-social {
+    display: flex;
+}
+
+.fb,
+.tw,
+.ig,
+.yt {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(48, 46, 46);
+    margin: 1.5rem 1rem;
+}
+
+.footer-text {
+    /* border: solid 1px red; */
+    display: flex;
+}
+
+.footer-text span {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(48, 46, 46);
+    margin: 1.5rem 1rem;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    color: rgb(128, 124, 124);
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+
+    .footer-text {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-text span {
+        margin: 1rem;
+    }
+}

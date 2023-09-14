@@ -1,0 +1,75 @@
+.movie-container {
+    width: 20%;
+}
+
+.movie-container:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.image {
+    min-height: 250px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.image img {
+    width: 100%;
+}
+
+.details {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-status,
+.details-type {
+    font-size: small;
+    font-weight: bold;
+    color: darkgray;
+    padding-bottom: 0.5rem;
+}
+
+.details-header {
+    color: #444141;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.rating {
+    /* border: solid 1px red; */
+    margin-bottom: 1rem;
+}
+
+.rating .badge {
+    background-color: rgb(88, 88, 7);
+    color: #000;
+    padding: 0.2rem;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-right: 1rem;
+}
+
+.rating .percentage {
+    margin-left: 2rem;
+}
+
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+
+    .movie-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+
+    .movie-container {
+        width: 100%;
+    }
+}
